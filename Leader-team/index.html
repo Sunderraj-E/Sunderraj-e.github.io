@@ -3,92 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Leadership Team</title>
+  <title>Data Science Wizards - Leadership Team</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
       margin: 0;
       padding: 0;
+      font-family: "Helvetica", Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
     }
+
+    /* Hero / Banner */
     header {
-      background: #007bff;
+      background: linear-gradient(135deg, #000428, #004e92);
       color: white;
-      padding: 30px;
       text-align: center;
+      padding: 60px 20px;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.2em;
+
+    header img {
+      width: 140px;
+      margin-bottom: 15px;
     }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 10px 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+
+    /* Team Container */
     .team-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 40px 0;
-      gap: 30px;
-      padding: 0 20px;
+      gap: 40px;
+      padding: 40px 20px 80px;
+      max-width: 1100px;
+      margin: auto;
     }
+
+    /* Card Style */
     .team-member {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       text-align: center;
-      padding: 20px;
+      padding: 24px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+
+    .team-member:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    }
+
     .team-member img {
       width: 130px;
       height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      border: 3px solid #007bff;
     }
+
     .team-member h2 {
-      margin: 10px 0 5px 0;
-      font-size: 1.3em;
+      margin: 8px 0;
+      font-size: 1.4em;
+      color: #111;
     }
+
     .team-member p {
-      margin: 6px 0;
+      margin: 8px 0;
       color: #555;
-      font-size: 0.97em;
+      font-size: 0.96em;
+      line-height: 1.4em;
     }
+
+    .team-member .title {
+      font-weight: bold;
+      color: #007bff;
+    }
+
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Our Leadership Team</h1>
-  <p>Meet the people shaping our vision and driving success</p>
+  <!-- Use your GIF logo here (update filename exactly) -->
+  <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/DSW-logo.gif" alt="DSW Logo">
+  <h1>Data Science Wizards</h1>
+  <p>Build, Operate, and Scale AI & Agentic AI across your Enterprise</p>
+  <p><strong>Our Leadership Team</strong></p>
 </header>
 
 <div class="team-container">
 
-  <!-- Manager: Rajeshwar Singh -->
+  <!-- CEO: Sandeep Khuperkar (First) -->
   <div class="team-member">
-    <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/Rajeshwar%20Singh.jpg" alt="Rajeshwar Singh Photo">
-    <h2>Rajeshwar Singh</h2>
-    <p><strong>Manager</strong></p>
-    <p>Email: rajeshwar.singh@datasciencewizards.ai</p>
-    <p>Rajeshwar leads our operational strategy with precision and passion. With a strong background in team management and performance optimization, he drives daily excellence and ensures seamless project delivery across all departments.</p>
-  </div>
-
-  <!-- CEO: Sandeep Khuperkar -->
-  <div class="team-member">
-    <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/Sandeep-Khuperkar.jpg" alt="Sandeep Khuperkar Photo">
+    <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/Sandeep-Khuperkar.jpg"
+         alt="Sandeep Khuperkar">
     <h2>Sandeep Khuperkar</h2>
-    <p><strong>CEO</strong></p>
+    <p class="title">CEO</p>
     <p>Email: sandeep.khuperkar@datasciencewizards.ai</p>
     <p>Sandeep is a dynamic leader with a bold vision and a drive to innovate. As CEO, he pushes boundaries, fosters a culture of excellence, and steers the company toward breakthrough success.</p>
   </div>
 
-  <!-- Founder: Pritesh Tiwari -->
+  <!-- Founder: Pritesh Tiwari (Second) -->
   <div class="team-member">
-    <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/Pritesh%20Tiwari.jpg" alt="Pritesh Tiwari Photo">
+    <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/Pritesh%20Tiwari.jpg"
+         alt="Pritesh Tiwari">
     <h2>Pritesh Tiwari</h2>
-    <p><strong>Founder</strong></p>
+    <p class="title">Founder</p>
     <p>Email: pritesh.tiwari@datasciencewizards.ai</p>
-    <p>Pritesh is the visionary founder behind our organization. His innovative mindset and leadership experience have shaped our mission and culture, guiding us toward growth, creativity, and meaningful impact every day.</p>
+    <p>Pritesh is the visionary founder who shaped our mission and culture, leading us toward growth, creativity, and meaningful impact every day.</p>
+  </div>
+
+  <!-- Manager: Rajeshwar Singh (Third) -->
+  <div class="team-member">
+    <img src="https://raw.githubusercontent.com/Sunderraj-E/Sunderraj-e.github.io/main/image/Rajeshwar%20Singh.jpg"
+         alt="Rajeshwar Singh">
+    <h2>Rajeshwar Singh</h2>
+    <p class="title">Manager</p>
+    <p>Email: rajeshwar.singh@datasciencewizards.ai</p>
+    <p>Rajeshwar leads our operational strategy with precise execution and strong team guidance to deliver excellence across all departments.</p>
   </div>
 
 </div>
